@@ -20,6 +20,10 @@ public class HomePage {
         clickLink("Dropdown");
         return new DropdownPage(driver);
     }
+    public KeyPressesPage clickKeyPresses(){
+        clickLink("Key Presses");
+        return new KeyPressesPage(driver);
+    }
     public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
