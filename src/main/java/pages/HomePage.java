@@ -30,6 +30,11 @@ public class HomePage {
         driver.findElement(By.linkText(linkText)).click();
     }
 
+    public FileUploadPage clickFileUpload() {
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
     public AlertPage clickJavaScriptAlerts() {
         clickLink(("JavaScript Alerts"));
         return new AlertPage(driver);
