@@ -55,6 +55,11 @@ public class HomePage {
         return new DynamicLoadingPage(driver);
     }
 
+    public MultipleWindowsPage clickMultipleWindows() {
+        clickLink("Multiple Windows");
+        return new MultipleWindowsPage(driver);
+    }
+
     public AlertPage clickJavaScriptAlerts() {
         clickLink(("JavaScript Alerts"));
         return new AlertPage(driver);
