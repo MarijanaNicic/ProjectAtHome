@@ -35,6 +35,11 @@ public class HomePage {
         return new FileUploadPage(driver);
     }
 
+    public WysiwygEditorPage clickWysiwygEditor() {
+        clickLink("WYSIWYG Editor");
+        return new WysiwygEditorPage(driver);
+    }
+
     public AlertPage clickJavaScriptAlerts() {
         clickLink(("JavaScript Alerts"));
         return new AlertPage(driver);
